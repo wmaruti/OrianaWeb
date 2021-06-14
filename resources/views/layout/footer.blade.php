@@ -1,3 +1,7 @@
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>	
+
 <!-- Start Footer bottom Area -->
   <footer>
     <div class="footer-area">
@@ -14,9 +18,10 @@
                 </div>
                 
                 <div class="footer-contacts">
-                  <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       <a href='#contact' class='akun'><svg class="ikon" viewBox="0 0 24 24">
-    <path d="M5,3V21H11V17.5H13V21H19V3H5M7,5H9V7H7V5M11,5H13V7H11V5M15,5H17V7H15V5M7,9H9V11H7V9M11,9H13V11H11V9M15,9H17V11H15V9M7,13H9V15H7V13M11,13H13V15H11V13M15,13H17V15H15V13M7,17H9V19H7V17M15,17H17V19H15V17Z" />
-</svg><span style="  font-size: 1rem;
+                  <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                    <a href='#contact' class='akun'>
+                    <img src="{{ Storage::url('image/building.png')}}"> </img>
+                    <span style="  font-size: 1rem;
 
 font-weight: normal;
 
@@ -39,9 +44,9 @@ letter-spacing: 0.5px"> <font color="#ffffff"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jak
     }</style></p>
 
 <br>
-<p style="margin-top: -35px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       <a href='#' class='akun'><svg class="ikon" viewBox="0 0 24 24">
-    <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" /></svg>
-    <span style="  font-size: 1rem;
+<p style="margin-top: -30px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+  <a href='#' class='akun'>
+  <img src="{{ Storage::url('image/mail.png')}}"> </img>    <span style="  font-size: 1rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -54,8 +59,9 @@ oriana.pp@oriana.id
         height: 24px;
     }</style></p>
 <br><br>
-<p style="margin-top: -55px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       <a href='#' class='akun'><svg class="ikon" viewBox="0 0 24 24" >
-    <path  d="M20,15.5C18.8,15.5 17.5,15.3 16.4,14.9C16.3,14.9 16.2,14.9 16.1,14.9C15.8,14.9 15.6,15 15.4,15.2L13.2,17.4C10.4,15.9 8,13.6 6.6,10.8L8.8,8.6C9.1,8.3 9.2,7.9 9,7.6C8.7,6.5 8.5,5.2 8.5,4C8.5,3.5 8,3 7.5,3H4C3.5,3 3,3.5 3,4C3,13.4 10.6,21 20,21C20.5,21 21,20.5 21,20V16.5C21,16 20.5,15.5 20,15.5M5,5H6.5C6.6,5.9 6.8,6.8 7,7.6L5.8,8.8C5.4,7.6 5.1,6.3 5,5M19,19C17.7,18.9 16.4,18.6 15.2,18.2L16.4,17C17.2,17.2 18.1,17.4 19,17.4V19Z" /></svg>
+<p style="margin-top: -40px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+ <a href='#' class='akun'>
+ <img src="{{ Storage::url('image/phone.png')}}"> </img>
     <span style="  font-size: 1rem;
     font-weight: normal;
     font-stretch: normal;
@@ -94,8 +100,8 @@ oriana.pp@oriana.id
                     </li>
                   </ul>
                 </div> -->
-              </div>
             </div>
+              </div>
           </div>
           <!-- end single footer -->
           <div class=" col-sm-4 col-xs-12">
@@ -119,7 +125,32 @@ oriana.pp@oriana.id
                 <div class="footer-isi section-headline1">
                     <ul>
                     <a href='#' > FAQ </a><br>
-                    <a href='#' > Support </a><br>
+                    <a href='#myModal' data-toggle="modal" data-target="#myModal"> Support </a><br>
+                   	<!-- Tombol untuk menampilkan modal-->
+	<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buka Modal</button> -->
+ 
+ <!-- Modal -->
+ <div id="myModal" class="modal fade" role="dialog">
+   <div class="modal-dialog  modal-lg">
+     <!-- konten modal-->
+     <div class="modal-content">
+       <!-- heading modal -->
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="modal-title">Bagian heading modal</h4>
+       </div>
+       <!-- body modal -->
+       <div class="modal-body">
+         <p>bagian body modal.</p>
+         
+       </div>
+       <!-- footer modal -->
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Tutup Modal</button>
+       </div>
+     </div>
+   </div>
+ </div>
                     <a href='contact' > Contact </a>
                         <!-- @foreach($services as $service)
                         <li><p>{{ $service->title }}</p></li>
@@ -133,6 +164,7 @@ oriana.pp@oriana.id
         </div>
       </div>
     </div>
+    
     <div class="footer-area-bottom">
       <div class="container">
         <div class="row">

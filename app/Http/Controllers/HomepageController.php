@@ -14,7 +14,7 @@ use App\Model\Testimoni;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests;
-// use DB;
+use Session;
 
 class HomepageController extends Controller
 {
@@ -62,6 +62,8 @@ class HomepageController extends Controller
             'services'=>$services
         ]);
     }
+
+    
 
     public function contactStore(Request $request) {
         $this->validate($request, [
