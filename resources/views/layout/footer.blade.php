@@ -110,8 +110,8 @@ oriana.pp@oriana.id
                 <h2><strong>Explore </strong></h2>
                 <div class="footer-isi section-headline1">
                     <ul>
-                    <a href='#' > About </a><br>
-                    <a href='#' > Features </a><br>
+                    <a href="{{ url('about_uspage') }}" > About </a><br>
+                    <a href="{{ url('featurespage') }}" > Features </a><br>
                     <a href='contact' > Careers </a>
                 </div>
               </div>

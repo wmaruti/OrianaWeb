@@ -119,6 +119,8 @@ Route::get('/productspage2', 'Productspage2Controller@index')->name('productspag
 Route::post('/productspage2/contact-us/store', 'Productspage2Controller@contactStore3')->name('contact.store3');
 
 
+Route::get('/about_uspage', 'About_uspageController@index')->name('about_uspage.index');
+Route::get('/featurespage', 'FeaturespageController@index')->name('featurespage.index');
 
 
 Route::get('/Article/detail/{slug}', 'ArticleController@detail')->name('article.detail');
