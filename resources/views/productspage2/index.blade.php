@@ -330,14 +330,14 @@ color: #4a4a4a;
 <style>
 .grid-container {
   display: grid;
-  grid-template-columns: 0.4fr 19rem 19rem 19rem 19rem 19rem 19rem;
-  grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr
+  grid-template-columns: 0.9fr 25rem 25rem 25rem 25rem;
+  grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 
   
   gap: 0px 0px;
   grid-template-areas:
-    "Business-Aspect Building-Management-Connection PPPSRS-connection Tenant-connection Visitors-connection con1 con2"
-    ". . . . . . ."
-    ". . . . . . .";
+    "Business-Aspect Building-Management-Connection PPPSRS-connection Tenant-connection Visitors-connection"
+    ". . . . ."
+    ". . . . .";
 }
 
 .Business-Aspect { grid-area: Business-Aspect; }
@@ -348,8 +348,6 @@ color: #4a4a4a;
 
 .Tenant-connection { grid-area: Tenant-connection; }
 .Visitors-connection { grid-area: Visitors-connection; }
-.con1 { grid-area: con1; }
-.con2 { grid-area: con2; }
 
 .isi_slide{
     border: none;
@@ -368,7 +366,7 @@ color: #0f0f0f;
 <div class="slide">
   <div class="grid-container">
   <div class=" Business-Aspect layer-1-8-1" style="margin-left:40px; margin-top:25px;"><p><h2> Business <br>Aspect </h2></p></div>
-  <div class="Building-Management-Connection isi_slide" style="margin-top:25px; text-align:center; padding-top:20px;">Alumni<br>Connection</div>
+  <div class="Building-Management-Connection isi_slide" style="margin-top:25px; text-align:center; padding-top:30px;">Alumni<br>Connection</div>
   <div class="PPPSRS-connection isi_slide" style="margin-top:25px; text-align:center; padding-top:30px;"> Student <br>connection</div>
   <div class="Tenant-connection isi_slide" style="margin-top:25px; text-align:center; padding-top:30px;">University <br>Integration</div>
   <div class="Visitors-connection isi_slide" style="margin-top:25px; text-align:center; padding-top:30px;">Consultation <br>system</div>
@@ -378,24 +376,7 @@ color: #0f0f0f;
   
 </div>
   </div>
-  <div class="slide">
-    <h3>Next Slide </h3>
-    <p>
-      Her birthday calculates past a juice! The envy succeeds across an evident jelly. An afternoon shifts opposite a bust.
-    </p>
-  </div>
-  <!-- <div class="slide">
-    <h3>Slide 4</h3>
-    <p>
-      A distributed actor pilots the null pencil. The wild wolfs a damp cage inside the breach.
-    </p>
-  </div>
-  <div class="slide">
-    <h3>Slide 5</h3>
-    <p>
-      The suspected book hums opposite the unacceptable urge. The warning goodbye searches the substitute.
-    </p>
-  </div> -->
+  
 </div></div>
 
 <!-- end slider list -->

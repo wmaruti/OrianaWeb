@@ -351,14 +351,14 @@ color: #4a4a4a;
 <style>
 .grid-container {
   display: grid;
-  grid-template-columns: 17rem 19rem 19rem 19rem 19rem 19rem 19rem;
-  grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr
+  grid-template-columns: 17rem 19rem 19rem 19rem 19rem 19rem 19rem 19rem;
+  grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr
   
   gap: 0px 0px;
   grid-template-areas:
-    "Business-Aspect Building-Management-Connection PPPSRS-connection Tenant-connection Visitors-connection con1 con2"
-    ". . . . . . ."
-    ". . . . . . .";
+    "Business-Aspect Building-Management-Connection PPPSRS-connection Tenant-connection Visitors-connection con1 con2 con3"
+    ". . . . . . . ."
+    ". . . . . . . .";
 }
 
 .Business-Aspect { grid-area: Business-Aspect; }
@@ -371,6 +371,7 @@ color: #4a4a4a;
 .Visitors-connection { grid-area: Visitors-connection; }
 .con1 { grid-area: con1; }
 .con2 { grid-area: con2; }
+.con3 { grid-area: con3; }
 
 .isi_slide{
     border: none;
@@ -401,29 +402,13 @@ color: #0f0f0f;
   <div class="Tenant-connection isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;">Tenant <br>connection</div>
   <div class="Visitors-connection isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;">Visitors <br>connection</div>
   
-  <div class="con1 isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;">Tenant <br>connection</div>
-  <div class="con2 isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;">Visitors <br>connection</div>
+  <div class="con1 isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;">Invoice and <br>payment</div>
+  <div class="con2 isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;">Ticketing <br>system</div>
+  <div class="con3 isi_slide" style="margin-top:-80px; margin-left:50px; text-align:center; padding-top:0px;">Facility <br>utilization</div>
   
 </div>
   </div>
-  <!-- <div class="slide">
-    <h3>Next Slide </h3>
-    <p>
-      Her birthday calculates past a juice! The envy succeeds across an evident jelly. An afternoon shifts opposite a bust.
-    </p>
-  </div> -->
-  <!-- <div class="slide">
-    <h3>Slide 4</h3>
-    <p>
-      A distributed actor pilots the null pencil. The wild wolfs a damp cage inside the breach.
-    </p>
-  </div>
-  <div class="slide">
-    <h3>Slide 5</h3>
-    <p>
-      The suspected book hums opposite the unacceptable urge. The warning goodbye searches the substitute.
-    </p>
-  </div> -->
+ 
 </div></div>
 
 
@@ -661,20 +646,21 @@ color: #4a4a4a;
 <!-- End Testimonials -->
 
 
+
+
 <!-- start slider list -->
-<!-- start slider list -->
-<div class="s-wrap" style="margin-bottom:7.5rem; margin-top:7.5rem;"><div class="s-move">
+<div class="s-wrap" ><div class="s-move">
 <style>
 .grid-container {
-display: grid;
-grid-template-columns: 0.4fr 19rem 19rem 19rem 19rem 19rem 19rem;
-grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr
-
-gap: 0px 0px;
-grid-template-areas:
-"Business-Aspect Building-Management-Connection PPPSRS-connection Tenant-connection Visitors-connection con1 con2"
-". . . . . . ."
-". . . . . . .";
+  display: grid;
+  grid-template-columns: 14rem 19rem 19rem 19rem 19rem 19rem 19rem  19rem 19rem;
+  grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr
+  
+  gap: 0px 0px;
+  grid-template-areas:
+    "Business-Aspect Building-Management-Connection PPPSRS-connection Tenant-connection Visitors-connection con1 con2 con3 con4 con5"
+    ". . . . . . . . . ."
+    ". . . . . . . . . .";
 }
 
 .Business-Aspect { grid-area: Business-Aspect; }
@@ -687,9 +673,12 @@ grid-template-areas:
 .Visitors-connection { grid-area: Visitors-connection; }
 .con1 { grid-area: con1; }
 .con2 { grid-area: con2; }
+.con3 { grid-area: con3; }
+.con4 { grid-area: con4; }
+
 
 .isi_slide{
-border: none;
+    border: none;
 border-right: solid 1px #d8d8d8;   
 font-size: 1.625rem;
 font-weight: 600;
@@ -702,41 +691,33 @@ color: #0f0f0f;
 }
 
 </style>
-<div class="slide">
-<div class="grid-container">
-<div class=" Business-Aspect layer-1-8-1" style="margin-left:40px; margin-top:-23px;"><p><h2> Business <br>Aspect </h2></p></div>
-<div class="Building-Management-Connection isi_slide" style="margin-top:-23px; text-align:center; padding-top:20px;">Building<br>Management<br>Connection</div>
-<div class="PPPSRS-connection isi_slide" style="margin-top:-23px; text-align:center; padding-top:30px;"> PPPSRS <br>connection</div>
-<div class="Tenant-connection isi_slide" style="margin-top:-23px; text-align:center; padding-top:30px;">Tenant <br>connection</div>
-<div class="Visitors-connection isi_slide" style="margin-top:-23px; text-align:center; padding-top:30px;">Visitors <br>connection</div>
+  <!-- <div class="slide">
+    <h2 class="layer-1-8"> Businees <br> Aspect</h2>
+    <p>
+      The episode orbits? The panic overwhelms a fuse. The major lurks below the shower!
+    </p>
+  </div>
+   -->
+  <div class="slide">
+  <div class="grid-container">
+  <div class=" Business-Aspect layer-1-8-1" style="margin-top:-25px;"><p><h2> Business <br> Aspect </h2></p></div>
+  <div class="Building-Management-Connection isi_slide" style="margin-top:-25px; text-align:center; padding-top:20px;">Building<br>Management<br>Connection</div>
+  <div class="PPPSRS-connection isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;"> PPPSRS <br>connection</div>
+  <div class="Tenant-connection isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;">Tenant <br>connection</div>
+  <div class="Visitors-connection isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;">Visitors <br>connection</div>
+  
+  <div class="con1 isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;">Invoice and <br>payment</div>
+  <div class="con2 isi_slide" style="margin-top:-25px; text-align:center; padding-top:30px;">Ticketing <br>system</div>
+  <div class="con3 isi_slide" style="margin-top:-25px;  text-align:center; padding-top:30px;">Facility <br>utilization</div>
+  <div class="con4 isi_slide" style="margin-top:-25px; margin-left:30px; text-align:center; padding-top:30px;">Smart living  <br>system</div>
 
-<div class="con1 isi_slide" style="margin-top:-23px; text-align:center; padding-top:30px;">Tenant <br>connection</div>
-<div class="con2 isi_slide" style="margin-top:-23px; text-align:center; padding-top:30px;">Visitors <br>connection</div>
-
 </div>
-</div>
-<div class="slide">
-<h3>Next Slide </h3>
-<p>
-Her birthday calculates past a juice! The envy succeeds across an evident jelly. An afternoon shifts opposite a bust.
-</p>
-</div>
-<!-- <div class="slide">
-<h3>Slide 4</h3>
-<p>
-A distributed actor pilots the null pencil. The wild wolfs a damp cage inside the breach.
-</p>
-</div>
-<div class="slide">
-<h3>Slide 5</h3>
-<p>
-The suspected book hums opposite the unacceptable urge. The warning goodbye searches the substitute.
-</p>
-</div> -->
+  </div>
+ 
 </div></div>
 
-<!-- end slider list -->
 
+<!-- end slider list -->
 
 <!-- Start contact Area -->
 <div id="contact" class="contact-area">

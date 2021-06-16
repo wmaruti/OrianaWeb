@@ -24,7 +24,7 @@
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-1 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                   <strong> <h5 class="title2">{!! config('web_config')['TEXT_DESCRIPTION_1'] !!}</h5> </strong>
+                                   <strong> <h5 style="font-weight: 510; color: #3f3f3f;" class="title2">{!! config('web_config')['TEXT_DESCRIPTION_1'] !!}</h5> </strong>
                                 </div>
                                 <!-- layer 3 -->
                                 <!-- <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
@@ -49,7 +49,7 @@
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-1 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                <strong> <h5 class="title2">{!! config('web_config')['TEXT_DESCRIPTION_2'] !!}</h5></strong>
+                                <strong> <h5 style="font-weight: 510; color: #3f3f3f;" class="title2">{!! config('web_config')['TEXT_DESCRIPTION_2'] !!}</h5></strong>
                                 </div>
                                 <!-- layer 3 -->
                                 <!-- <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
@@ -74,7 +74,7 @@
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                <strong> <h5 class="title2">{!! config('web_config')['TEXT_DESCRIPTION_3'] !!}</h5></strong>
+                                <strong> <h5 style="font-weight: 510; color: #3f3f3f;" class="title2">{!! config('web_config')['TEXT_DESCRIPTION_3'] !!}</h5></strong>
                                 </div>
                                 <!-- layer 3 -->
                                 <!-- <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">

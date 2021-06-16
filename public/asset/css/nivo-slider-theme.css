@@ -165,12 +165,16 @@
     text-indent: inherit;
     vertical-align: top;
     width: 20px;
+    position: relative;
+    top: -380px;
+    left: -400px;
 }
 
 .nivo-controlNav a:hover,
 .nivo-controlNav a.active {
     background: #fff none repeat scroll 0 0;
-    border-color: #3ec1d5;
+    border-color: #f9a236;
+
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
@@ -408,21 +412,24 @@ preview-2
 
 .preview-2 .nivo-directionNav a.nivo-prevNav::before {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #ffffff;
+    color: #253470;
     content: "";
     cursor: pointer;
-    font: 300 50px/50px FontAwesome;
+    margin: 10.688rem 61.688rem 0rem 1.875rem;
+    font: 300 50px/38px FontAwesome;
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: -50px;
     transition: all 300ms ease-in 0s;
     z-index: 9;
     font-weight: 100;
-    left: 0px;
-    width: 50px;
+    left: 130px;
+    width: 40px;
     border: 1px solid #fff;
-    border-radius: 50%;
+    border-radius: 16px;
     font-size: 30px;
+    box-shadow: 2px 4px 16px 0 rgba(251, 184, 113, 0.3);
+    background-color: #ffffff;
 }
 
 .preview-2 .nivo-directionNav a.nivo-nextNav:hover:before,
@@ -433,20 +440,25 @@ preview-2
 }
 
 .preview-2 .nivo-directionNav a.nivo-nextNav::before {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    color: #ffffff;
+    /* background: rgba(0, 0, 0, 0) none repeat scroll 0 0; */
+    /* border: 1px solid rgb(253, 252, 252); */
+    box-shadow: 2px 4px 16px 0 rgba(251, 184, 113, 0.3);
+    /* width: 2.875rem; */
+    /* height: 2.875rem; */
+    margin: 10.688rem 61.688rem 0rem 1.875rem;
+    background-color: #ffffff;
+    border-radius: 16px;
+    color: #253470;
     content: "";
     cursor: pointer;
-    font: 100 30px/50px FontAwesome;
-    height: 50px;
+    font: 100 30px/38px FontAwesome;
+    height: 40px;
     position: absolute;
-    right: 0px;
+    right: 340px;
     text-align: center;
-    top: 50%;
+    top: -50px;
     transition: all 300ms ease-in 0s;
-    width: 50px;
+    width: 40px;
     z-index: 9;
     font-size: 30px;
 }
