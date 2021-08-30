@@ -1,82 +1,9 @@
-@extends('layout.master')
-@section('title')
-    <title>{{ config('web_config')['WEBSITE_TITLE'] }}</title>
-@endsection
-@section('content')
-    <!-- Start Slider Area -->
-    <div id="home" class="slider-area" style="background-color: white;">
-        <div class="bend niceties preview-2">
-        <div  class="image " style="width:1355px;">
-                <img  src="{{ Storage::url('images/setting/header.png') }}" alt="" title="" /> <br>
-                
-            </div>
-            <div class="layer-1-8-product  text-center ">
-           <strong> <p> <h2 class="title1"  style="margin-top: -190px; margin-left: 0px; font-size:60px;">About</h2></p> 
-          </strong>
-            <!-- opera setting
-             <strong> <p> <h2 class="title1"  style="margin-top: -300px; margin-left: -810px;">for Property</h2></p> 
-            <p><h2 class="title1"  style=" margin-left: -790px;">Management</h2></p> </strong> -->
-                                </div>
-        
-            
-         
-    <!-- End Slider Area -->
 
-                 </div>
-                    </div>
-    <!-- End Product area -->
-  
-   
-    <!-- Start About area -->
-    <div id="about" class="about-area area-padding" style="background-color: white;">
-
-        <div class="container">
-            
-            <div class="row">
-                <!-- <div class="col-md-12 col-sm-12 col-xs-12"> -->
-                  
-                    <div class="layer-1-8 " style=" text-align: center; margin-top:180px;">
-                   
-                        <p><h2>Over 4 years experience<h2></p>
-                    </div>
-                    <div>
-                   
-                     <!-- <br><br> <br><br> <br><br> <br><br> -->
-                     <style>
-                     .gaya{
-      
-height: 19rem;
-margin: 0 0 2.5rem;
-font-size: 1.5rem;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.58;
-letter-spacing: 0.86px;
-margin-bottom: 5rem;
-text-align: center;
-
-color: #4a4a4a;
-                     }
-                     </style>
-                    <h5 class="title1 gaya"  style="margin-bottom:190px;">
-                    Oriana Prima Persada was founded on 25 January 2017.<br>
-                    Part of subsidiary of PT Oriana Rafaindo Persada and <br>
-                    PT Akhdani Reka Solution. Started business in the <br>
-                    software solution field since 28 January 2009, <br>
-                    while starting businesses, PT Oriana Prima Persada <br>
-                    concerned with the Building Management System.  <br>
-                    We provide transparent, accurate solutions, and real<br> 
-                    time system. <br><br>
-                   
-                    Within 4 years have made several application products <br>that help business in various fields
-                    </h5>
-
-</div>
-
-</div>
+	<!-- Tombol untuk menampilkan modal-->
+	<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buka Modal</button> -->
+ 
  <!-- Modal -->
- <div id="ajaxModel" class="modal fade in" role="dialog">
+ <div id="ajaxModel" class="modal fade" role="dialog">
  
  <style>
  .Mask {
@@ -149,14 +76,15 @@ color: #4a4a4a;
                         <div class="form contact-form"  style="margin-left: 51x;">
                             <div id="sendmessage">Your message has been sent. Thank you!</div>
                             <div id="errormessage"></div>
-                            <form action="{{ url('/contactStoremodal') }}" method="post"  id="productForm"  >
-                            {{ csrf_field() }}
+                            <form action="{{ url('/modal/store') }}" method="post"  id="productForm" >
+                                {{ csrf_field() }}
+                           
 
                                 <div class="form-group">
                                     
                                 <p>
                                     <input class="form-control"type="text" name="name"  id="name" placeholder=" Name*" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  style="border: none; border-bottom: 1px solid #bababa; width:18.688rem; margin-right:2.483rem;"/>
-                                    <input class="form-control"  name="phone"  type="number" min="0" max="9999999999999999999999999999999999" value="{{ old('phone') }}" id="name" placeholder=" Phone*" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  style="border: none; border-bottom: 1px solid #bababa; width:18.4rem; margin-top:-50px; margin-left:215px;"/>
+                                    <input class="form-control" type="text" name="phone"   id="phone" placeholder=" Phone*" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  style="border: none; border-bottom: 1px solid #bababa; width:18.4rem; margin-top:-56px; margin-left:215px;"/>
                                 </p>
                                  
                                  
@@ -176,8 +104,7 @@ color: #4a4a4a;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $services->title}}  
                                  </option>
                             @endforeach
-                            </select> 
-                            <!-- <i class="fa fa-chevron-down" aria-hidden="true" style="margin-left:-13px; color:#253470;"></i> -->
+                            </select> <i class="fa fa-chevron-down" aria-hidden="true" style="margin-left:-13px; color:#253470;"></i>
 
                          
                         </div>
@@ -203,7 +130,7 @@ background-color: #253470;" >Save</button></div>
 
 
             
-                       
+                            </form>
                         </div>
                     </div>
                     <!-- End Left contact -->
@@ -294,27 +221,21 @@ background-color: #f7f7f7;
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-    
-<script type="text/javascript">
+    <script type="text/javascript">
 
 $(document).ready(function () {
 
 $('#productForm').on('submit', function(e) {
     e.preventDefault();
-    $.ajax({
+    
+    $ajax({
         type: "POST",
-        headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    },
-        url: "/contactStoremodal",
+        url: "/contact-us/contactStore",
         data: $('#productForm').serialize(),
         success: function (response) {
             console.log(response)
             $('#ajaxModel').modal('hide')
             alert("Data Saved");
-            // setTimeout(function(){ location.reload()}, 3000);
-            location.reload();
         },
         error: function(error) {
             console.log(error)
@@ -326,7 +247,3 @@ $('#productForm').on('submit', function(e) {
   
 
 </script>
-
-
-
-@endsection

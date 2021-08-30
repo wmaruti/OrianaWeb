@@ -45,7 +45,7 @@
                             <div class="slider-content alignleft">
                                 <!-- layer 1 -->
                                 <div class="layer-1-2 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                    <h1 class="title1">{{ config('web_config')['TEXT_TITLE'] }}</h1>
+                                    <h1 class="title1">{{ config('web_config')['TEXT_TITLE2'] }}</h1>
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-1 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
@@ -70,7 +70,7 @@
                             <div class="slider-content alignleft">
                                 <!-- layer 1 -->
                                 <div class="layer-1-2 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                    <h1 class="title1">{{ config('web_config')['TEXT_TITLE'] }}</h1>
+                                    <h1 class="title1">{{ config('web_config')['TEXT_TITLE3'] }}</h1>
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
@@ -204,7 +204,7 @@
                         <div class="single-well">
                             <a href="#">
                                 @if(!empty($about->image))
-                                <img src="{{ Storage::url('images/about/'. $about->image) }}" alt="{{ $about->image }}"style="margin-left: -210px; margin-top: -110px; "  width="200%">
+                                <img src="{{ Storage::url('images/about/'. $about->image) }}" alt="{{ $about->image }}"style="margin-left: -110px; margin-top: -110px; "  width="70%">
                                 @endif
                             </a>
                         </div>
@@ -227,196 +227,8 @@
 
    
 
-    <!-- Faq area start -->
-    <!-- <div class="faq-area area-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="section-headline text-center">
-                        <h2>Faq Question</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-6 col-xs-12">
-                    <div class="faq-details">
-                        <div class="panel-group" id="accordion"> -->
-                            <!-- Panel Default -->
-                            <!-- @foreach($listFaqs as $faqs)
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="check-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#check{{ $loop->iteration }}">
-                                            <span class="acc-icons"></span>{!! $faqs->question !!}
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="check{{ $loop->iteration }}" class="panel-collapse collapse out">
-                                    <div class="panel-body">
-                                        <p>{!! $faqs->answer !!}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach -->
-                            <!-- End Panel Default -->
-                        <!-- </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- end Row -->
-        <!-- </div>
-    </div> -->
-    <!-- End Faq Area -->
-
-    <!-- Start Wellcome Area -->
-    <!-- <div class="wellcome-area">
-        <div class="well-bg">
-            <div class="test-overly"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="wellcome-text">
-                            <div class="well-text text-center">
-                                <h2>Welcome To Our Oriana</h2>
-                                <p>
-                                    Busuness Lorem ipsum dolor sit amet, consectetur adipiscing elit.luctus est eget congue.
-                                </p>
-                                <div class="subs-feilds">
-                                    <div class="suscribe-input">
-                                        <input type="email" class="email form-control width-80" id="sus_email" placeholder="Email">
-                                        <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
-                                        <div id="msg_Submit" class="h3 text-center hidden"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End Wellcome Area -->
-
-    
-
-    <!-- Start portfolio Area -->
-    <!-- <div id="portfolio" class="portfolio-area area-padding fix">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="section-headline text-center">
-                        <h2>Our Portfolio</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row"> -->
-                <!-- Start Portfolio -page -->
-                <!-- <div class="awesome-project-content"> -->
-                    <!-- single-awesome-project start -->
-                    <!-- @foreach($listPortofolio as $portofolio)
-                    <div class="col-md-4 col-sm-4 col-xs-12 design development">
-                        <div class="single-awesome-project">
-                            <div class="awesome-img">
-                                <a href="#"><img src="{{ Storage::url('image/portfolio/'.$portofolio->image) }}" alt="{{ $portofolio->title }}" /></a>
-                                <div class="add-actions text-center">
-                                    <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery" href="{{ Storage::url('image/portfolio/'.$portofolio->image) }}">
-                                            <h4>{{ $portofolio->title }}</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach -->
-                    <!-- single-awesome-project end -->
-                <!-- </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- awesome-portfolio end -->
-
-    <!-- Start Testimonials -->
-    <!-- <div class="testimonials-area">
-        <div class="testi-inner area-padding">
-            <div class="testi-overly"></div>
-            <div class="container ">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12"> -->
-                        <!-- Start testimonials Start -->
-                        <!-- <div class="testimonial-content text-center">
-                            <a class="quate" href="#"><i class="fa fa-quote-right"></i></a> -->
-                            <!-- start testimonial carousel -->
-                            <!-- <div class="testimonial-carousel">
-                                @foreach($listTestimoni as $testimoni)
-                                <div class="single-testi">
-                                    <div class="testi-text">
-                                        <p>{{ $testimoni->quote }}</p>
-                                        <h6>{{ $testimoni->name }}</h6>
-                                    </div>
-                                </div>
-                                @endforeach -->
-                                <!-- End single item -->
-                            <!-- </div>
-                        </div> -->
-                        <!-- End testimonials end -->
-                    <!-- </div> -->
-                    <!-- End Right Feature -->
-                <!-- </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End Testimonials -->
-
-    
-    <!-- Start Blog Area -->
-    <!-- <div id="blog" class="blog-area">
-        <div class="blog-inner area-padding">
-            <div class="blog-overly"></div>
-            <div class="container ">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="section-headline text-center">
-                            <h2>Latest News</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    @foreach($listArticles as $articles) -->
-                    <!-- Start Left Blog -->
-                    <!-- <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="single-blog">
-                            <div class="team-blog">
-                                <a href="{{ route('article.detail', $articles->slug)  }}">
-                                    <img src="{{ Storage::url('image/articles/'.$articles->image) }}" alt="{{ $articles->title }}">
-                                </a>
-                            </div>
-                            <div class="blog-meta">
-                                <span class="date-type">
-                                      <i class="fa fa-calendar"></i>{{ date('d M Y', strtotime($articles->created_at)) }}
-                                </span>
-                            </div>
-                            <div class="blog-text">
-                                <h4>
-                                    <a href="{{ route('article.detail', $articles->slug)  }}">{{ $articles->title }}</a>
-                                </h4>
-                                <p>{!! $articles->description !!}</p>
-                            </div>
-                            <span>
-                                <a href="{{ route('article.detail', $articles->slug) }}" class="ready-btn">Read more</a>
-                            </span>
-                        </div> -->
-                        <!-- Start single blog -->
-                    <!-- </div>
-                    @endforeach -->
-                    <!-- End Left Blog-->
-                <!-- </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End Blog -->
-    <!-- Start contact Area -->
-    <div id="contact" class="contact-area">
+   <!-- Start contact Area -->
+   <div id="contact" class="contact-area">
         <div class="contact-inner area-padding">
             <div class="contact-overly"></div>
             <div class="container ">
@@ -456,14 +268,14 @@
                             <div id="sendmessage">Your message has been sent. Thank you!</div>
                             <div id="errormessage"></div>
                             <form action="{{ route('contact.store') }}" method="post" role="form" class="contactForm">
-                                @csrf
+                            {{ csrf_field() }}
                            
 
                                 <div class="form-group">
                                     
                                 <p>
                                     <input class="form-control"type="text" name="name"  value="{{ old('name') }}" id="name" placeholder=" Name*" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  style="border: none; border-bottom: 1px solid #bababa; width:18.688rem; margin-right:2.483rem;"/>
-                                    <input class="form-control" type="text" name="phone"  value="{{ old('phone') }}" id="name" placeholder=" Phone*" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  style="border: none; border-bottom: 1px solid #bababa; width:18.4rem; margin-top:-56px; margin-left:215px;"/>
+                                    <input class="form-control"  name="phone"  type="number" min="0" max="9999999999999999999999999999999999" value="{{ old('phone') }}" id="name" placeholder=" Phone*" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  style="border: none; border-bottom: 1px solid #bababa; width:18.4rem; margin-top:-50px; margin-left:215px;"/>
                                 </p>
                                  
                                     <div class="validation"></div>
@@ -489,19 +301,6 @@
 
 
 
-                                <!-- <label for="cars">Choose a car:</label> -->
-
-<!-- <select name="cars" id="cars" value="{{ old('subject') }}" style=" width: 39.813rem; border: none; border-bottom: 1px solid #bababa;">
-  <option value="Volvo">Volvo</option>
-  <option value="Nissan">Nissan</option>
-  <option value="Mercedes">Mercedes</option>
-  <option value="Audi">Audi</option>
-</select> 
-<i class="fa fa-caret-down" aria-hidden="true"></i>
-
-                        <div class="form-group" style="margin-left:-15px; " >
-                
-                        <div class="col-sm-6"  > -->
                         <select class="select" id="services_id" name="subject"  value="{{ old('subject') }}" id="subject" placeholder="Product*" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"  style=" width: 39.813rem; border: none; border-bottom: 1px solid #bababa; color:grey; padding-bottom:10px; " > 
                             <option value="" > &nbsp;&nbsp;&nbsp;&nbsp; Products* 
                             </option>
@@ -535,22 +334,16 @@
                                     </div>
                                 @endif
                                 <div class="text-center"><button type="submit" style=" color: white; width: 19.938rem;   height: 4.375rem;
-
-margin: 3.75rem 25.125rem 12.5rem 3.563rem;
-
-
-border-radius: 35px;
-
-box-shadow: 0 8px 16px 0 rgba(35, 57, 149, 0.2);
-
-background-color: #253470;" >Submit</button></div>
-
-
+                                    margin: 3.75rem 25.125rem 12.5rem 3.563rem;
+                                    border-radius: 35px;
+                                    box-shadow: 0 8px 16px 0 rgba(35, 57, 149, 0.2);
+                                    background-color: #253470;" >Submit</button></div>
+</form>
 	<!-- Tombol untuk menampilkan modal-->
 	<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buka Modal</button> -->
  
  <!-- Modal -->
- <div id="myModal" class="modal fade" role="dialog">
+ <div id="ajaxModel" class="modal fade in" role="dialog">
  
  <style>
  .Mask {
@@ -616,59 +409,32 @@ background-color: #253470;" >Submit</button></div>
                     </div>
                     <!-- End Google Map -->
 
+                    
+
                     <!-- Start  contact -->
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form contact-form"  style="margin-left: 51x;">
                             <div id="sendmessage">Your message has been sent. Thank you!</div>
                             <div id="errormessage"></div>
-                            <form action="{{ route('contact.store') }}" method="post" role="form" class="contactForm">
-                                @csrf
-                           
+                            <form action="{{ url('/contactStoremodal') }}" method="post"  id="productForm"  >
+                            {{ csrf_field() }}
 
                                 <div class="form-group">
                                     
                                 <p>
-                                    <input class="form-control"type="text" name="name"  value="{{ old('name') }}" id="name" placeholder=" Name*" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  style="border: none; border-bottom: 1px solid #bababa; width:18.688rem; margin-right:2.483rem;"/>
-                                    <input class="form-control" type="text" name="phone"  value="{{ old('phone') }}" id="name" placeholder=" Phone*" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  style="border: none; border-bottom: 1px solid #bababa; width:18.4rem; margin-top:-56px; margin-left:215px;"/>
+                                    <input class="form-control"type="text" name="name"  id="name" placeholder=" Name*" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  style="border: none; border-bottom: 1px solid #bababa; width:18.688rem; margin-right:2.483rem;"/>
+                                    <input class="form-control"  name="phone"  type="number" min="0" max="9999999999999999999999999999999999" value="{{ old('phone') }}" id="name" placeholder=" Phone*" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  style="border: none; border-bottom: 1px solid #bababa; width:18.4rem; margin-top:-50px; margin-left:215px;"/>
                                 </p>
                                  
-                                    <div class="validation"></div>
-                                    @if($error = $errors->first('name'))
-                                        <p class="btn btn-danger mt-2">{{ $error }}</p>
-                                    @endif
-                                    
-                                    <div class="validation"></div>
-                                    @if($error = $errors->first('phone'))
-                                        <p class="btn btn-danger mt-2">{{ $error }}</p>
-                                    @endif
+                                 
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="email" value="{{ old('email') }}" id="email" placeholder=" Email*" data-rule="email*" data-msg="Please enter a valid email"  style="border: none; border-bottom: 1px solid #bababa;  width: 39.813rem;  margin-top:-10px;"/>
-                                    <div class="validation"></div>
-                                    @if($error = $errors->first('email'))
-                                        <p class="btn btn-danger mt-2">{{ $error }}</p>
-                                    @endif
+                                    <input type="email" class="form-control" name="email"  id="email" placeholder=" Email*" data-rule="email*" data-msg="Please enter a valid email"  style="border: none; border-bottom: 1px solid #bababa;  width: 39.813rem;  margin-top:-10px;"/>
+                                   
                                 </div>
 
 
-
-
-
-
-                                <!-- <label for="cars">Choose a car:</label> -->
-
-<!-- <select name="cars" id="cars" value="{{ old('subject') }}" style=" width: 39.813rem; border: none; border-bottom: 1px solid #bababa;">
-  <option value="Volvo">Volvo</option>
-  <option value="Nissan">Nissan</option>
-  <option value="Mercedes">Mercedes</option>
-  <option value="Audi">Audi</option>
-</select> 
-<i class="fa fa-caret-down" aria-hidden="true"></i>
-
-                        <div class="form-group" style="margin-left:-15px; " >
-                
-                        <div class="col-sm-6"  > -->
-                        <select class="select" id="services_id" name="subject"  value="{{ old('subject') }}" id="subject" placeholder="Product*" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"  style=" width: 39.813rem; border: none; border-bottom: 1px solid #bababa; color:grey; padding-bottom:10px; " > 
+                        <select class="select" id="services_id" name="subject"  id="subject" placeholder="Product*" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"  style=" width: 39.813rem; border: none; border-bottom: 1px solid #bababa; color:grey; padding-bottom:10px; " > 
                             <option value="" > &nbsp;&nbsp;&nbsp;&nbsp; Products* 
                             </option>
                             @foreach($listServices as $services) {
@@ -679,28 +445,16 @@ background-color: #253470;" >Submit</button></div>
                             @endforeach
                             </select> <i class="fa fa-chevron-down" aria-hidden="true" style="margin-left:-13px; color:#253470;"></i>
 
-                            <div class="validation"></div>
-                                    @if($error = $errors->first('subject'))
-                                        <p class="btn btn-danger mt-2">{{ $error }}</p>
-                                    @endif
+                         
                         </div>
 
                            <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="&nbsp;&nbsp;&nbsp;Message" 
+                                    <textarea class="form-control" name="message"  id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="&nbsp;&nbsp;&nbsp;Message" 
                                     style="border: none; border-bottom: 1px solid #CCC;  width: 39.813rem; height:100px; margin-top:13px;"></textarea>
-                                    <div class="validation"></div>
-                                    @if($error = $errors->first('message'))
-                                        <p class="btn btn-danger mt-2">{{ $error }}</p>
-                                    @endif
+                                  
                                 </div>
-                                @if($message = session('message'))
-                                    <div class="row mt-0 ml-2">
-                                        <div class="col-md-6">
-                                            <h4 class="btn btn-danger">{{ $message }}</h4>
-                                        </div>
-                                    </div>
-                                @endif
-                                <div class="text-center"><button type="submit" style=" color: white; width: 19.938rem;   height: 4.375rem;
+                         
+                                <div class="text-center"><button type="submit" id="saveBtn" value="create" style=" color: white; width: 19.938rem;   height: 4.375rem;
 
 margin: 1.5rem 25.125rem 9.5rem 3.563rem;
 
@@ -709,17 +463,20 @@ border-radius: 35px;
 
 box-shadow: 0 8px 16px 0 rgba(35, 57, 149, 0.2);
 
-background-color: #253470;" >Submit</button></div>
+background-color: #253470;" >Save</button></div>
 
 
 
 
             
-                            </form>
+                       
                         </div>
                     </div>
                     <!-- End Left contact -->
                 </div>
+
+
+
 
     <!-- End Contact Area -->
 
@@ -800,44 +557,40 @@ background-color: #f7f7f7;
                 </div>
 
     <!-- End Contact Area -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
-
-<!-- Start team Area -->
-    <!-- <div id="team" class="our-team-area area-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class=" text-left">
-                        <h3>Our</h3>
-                        <h2>Our special Team</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="team-top">
-                    @foreach($listTeam as $team)
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="{{ Storage::url('images/profile/'.$team->image) }}" alt="{{ $team->name }}">
-                                </a>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>{{ $team->name }}</h4>
-                                <p>{{ $team->position }}</p>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach -->
-                    <!-- End column -->
-                <!-- </div>
-            </div>
-        </div>
-    </div> -->
     
-    <!-- End Team Area -->
+<script type="text/javascript">
 
+$(document).ready(function () {
+
+$('#productForm').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    },
+        url: "/contactStoremodal",
+        data: $('#productForm').serialize(),
+        success: function (response) {
+            console.log(response)
+            $('#ajaxModel').modal('hide')
+            alert("Data Saved");
+            // setTimeout(function(){ location.reload()}, 3000);
+            location.reload();
+        },
+        error: function(error) {
+            console.log(error)
+        }
+    });
+});
+  
+});
+  
+
+</script>
 
 @endsection

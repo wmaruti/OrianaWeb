@@ -14,7 +14,7 @@ use App\Model\Testimoni;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class Productspage1Controller extends Controller
+class Our_partnerController extends Controller
 {
     public function index() {
         $about = About::first();
@@ -27,7 +27,7 @@ class Productspage1Controller extends Controller
         $address = Address::first();
         $contactUs = DB::table('contact_us')->select('email', 'contact_number')->first();
         // return view('productspage/index']);
-        return view('productspage1/index', [
+        return view('our_partner/index', [
             'about'     => $about,
             'listServices' => $listServices,
             'listFaqs' => $listFaqs,
@@ -38,26 +38,5 @@ class Productspage1Controller extends Controller
             'address'   => $address,
             'contactUs' => $contactUs
         ]);
-    }
-
-    public function contactStore2(Request $request) {
-      
-        $this->validate($request, [
-            'name' => 'required',
-            'phone' => 'required',
-            'email' => 'required|email',
-            'subject' => 'required',
-            'message' => 'required'
-        ]);
-
-        $feedback = new Feedback();
-        $feedback->name = $request->name;
-        $feedback->phone = $request->phone;
-        $feedback->email = $request->email;
-        $feedback->subject = $request->subject;
-        $feedback->message = $request->message;
-        $feedback->saveOrFail();
-        session()->flash('message', 'Success');
-        return redirect(url('productspage1'));
     }
 }

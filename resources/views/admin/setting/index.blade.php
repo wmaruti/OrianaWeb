@@ -97,6 +97,20 @@
                                     @endif
                                 </div>
                                 <div class="form-group">
+                                    <label for="judul2">Judul Slider2</label>
+                                    <input type="text" class="form-control" name="text_title2" value="{{ config('web_config')['TEXT_TITLE2'] }}" id="title2" placeholder="Masukan judul slider2" required="">
+                                    @if($error = $errors->first('text_title2'))
+                                        <p class="btn btn-danger mt-2">{{ $error }}</p>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label for="judul3">Judul Slider2</label>
+                                    <input type="text" class="form-control" name="text_title3" value="{{ config('web_config')['TEXT_TITLE3'] }}" id="title3" placeholder="Masukan judul slider3" required="">
+                                    @if($error = $errors->first('text_title3'))
+                                        <p class="btn btn-danger mt-2">{{ $error }}</p>
+                                    @endif
+                                </div>
+                                <div class="form-group">
                                     <label for="text_description_1">Deskripsi Slide 1</label>
                                     <textarea class="form-control js-summernote" id="text_description_1" name="text_description_1">{{ config('web_config')['TEXT_DESCRIPTION_1'] }}</textarea>
                                     @if($error = $errors->first('text_description_1'))

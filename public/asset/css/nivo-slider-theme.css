@@ -43,6 +43,12 @@
     font-weight: 700;
     line-height: 1.113rem;
 }
+.layer-1-7-career h2 {
+    color: #fbb871;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.113rem;
+}
 
 .layer-1-7-kecil h2 {
     color: rgb(241, 151, 77);
@@ -454,7 +460,7 @@ preview-2
     font: 100 30px/38px FontAwesome;
     height: 40px;
     position: absolute;
-    right: 340px;
+    right: 330px;
     text-align: center;
     top: -50px;
     transition: all 300ms ease-in 0s;

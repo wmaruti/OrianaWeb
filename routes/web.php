@@ -46,6 +46,26 @@ Route::group(['prefix' => 'Admin', 'middleware' => 'auth'], function () {
         Route::post('/update/{id}', 'Admin\AdminServiceController@update')->name('admin.service.update');
     });
 
+    Route::group(['prefix' => 'Jobs'], function () {
+        Route::get('/', 'Admin\AdminJobsController@index')->name('admin.jobs.index');
+        Route::get('/create', 'Admin\AdminJobsController@create')->name('admin.jobs.create');
+        Route::post('/store', 'Admin\AdminJobsController@store')->name('admin.jobs.store');
+        Route::get('/delete/{id}', 'Admin\AdminJobsController@delete')->name('admin.jobs.delete');
+        Route::get('/edit/{id}', 'Admin\AdminJobsController@edit')->name('admin.jobs.edit');
+        Route::post('/update/{id}', 'Admin\AdminJobsController@update')->name('admin.jobs.update');
+    });
+
+    Route::group(['prefix' => 'Multipleuploads'], function () {
+        Route::get('/', 'Admin\AdminMultipleuploadsController@index')->name('admin.multipleuploads.index');
+        // Route::get('/create', 'Admin\AdminJobsController@create')->name('admin.jobs.create');
+        // Route::post('/store', 'Admin\AdminJobsController@store')->name('admin.jobs.store');
+        // Route::get('/download{id}', 'Admin\AdminJobsController@show')->name('admin.multipleuploads.show');
+        Route::get( '/download/{filename}', 'AdminJobsController@download'); 
+        // Route::get('/edit/{id}', 'Admin\AdminJobsController@edit')->name('admin.jobs.edit');
+        // Route::post('/update/{id}', 'Admin\AdminJobsController@update')->name('admin.jobs.update');
+    });
+
+
     Route::group(['prefix' => 'Portofolio'], function () {
         Route::get('/', 'Admin\AdminPortofolioController@index')->name('admin.portofolio.index');
         Route::get('/create', 'Admin\AdminPortofolioController@create')->name('admin.portofolio.create');
@@ -107,10 +127,18 @@ Route::group(['prefix' => 'Admin', 'middleware' => 'auth'], function () {
 Route::get('/', 'HomepageController@index')->name('homepage.index');
 Route::get('/Article/detail/{slug}', 'ArticleController@detail')->name('article.detail');
 Route::get('Article/index/{category}', 'ArticleController@index')->name('article.index');
-Route::post('/contact-us/store', 'HomepageController@contactStore')->name('contact.store');
+Route::post('/contactStore', 'HomepageController@contactStore')->name('contact.store');
+Route::post('/contactStoremodal', 'HomepageController@contactStoremodal')->name('storemodal');
+
 
 Route::get('/productspage', 'ProductspageController@index')->name('productspage.index');
 Route::post('/productspage/contact-us/store', 'ProductspageController@contactStore1')->name('contact.store1');
+
+Route::get('/modal', 'ModalController@index')->name('modal.index');
+Route::post('/modal/store', 'ModalController@ModalStore')->name('modal.store');
+
+
+
 
 Route::get('/productspage1', 'Productspage1Controller@index')->name('productspage1.index');
 Route::post('/productspage1/contact-us/store', 'Productspage1Controller@contactStore2')->name('contact.store2');
@@ -121,9 +149,15 @@ Route::post('/productspage2/contact-us/store', 'Productspage2Controller@contactS
 
 Route::get('/about_uspage', 'About_uspageController@index')->name('about_uspage.index');
 Route::get('/featurespage', 'FeaturespageController@index')->name('featurespage.index');
-
+Route::get('/our_partner', 'Our_partnerController@index')->name('our_partner.index');
+Route::get('/career', 'CareerController@index')->name('career');
+Route::get('/career/{id}', 'CareerController@edit')->name('career.edit');
+Route::get('/career', 'CareerController@index')->name('career.index');
+Route::post('/career','CareerController@store')->name('career.store') ;
 
 Route::get('/Article/detail/{slug}', 'ArticleController@detail')->name('article.detail');
 Route::get('Article/index/{category}', 'ArticleController@index')->name('article.index');
 // Route::post('/contact-us/store', 'ProductspageController@contactStore')->name('contact.store');
 
+Route::get('/multipleuploads', 'MultipleuploadsController@index')->name('uploads');
+Route::post('/save','MultipleuploadsController@store')->name('uploads.store');

@@ -127,13 +127,13 @@
         </div>
       </li>                 -->
                   <li>
-                    <a class="page-scroll" href="#about">About Us</a>
+                    <a class="page-scroll" href="{{ url('about_uspage') }}">About Us</a>
                   </li>
                   <li>
                     <a class="page-scroll" href="#contact">Contact Us</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#team">Our Partner</a>
+                    <a class="page-scroll" href="{{ url('our_partner') }}">Our Partner</a>
                   </li>
                   <!-- <li>
                     <a class="page-scroll" href="#about">About</a>
@@ -157,7 +157,7 @@
 
                     @guest()
                     <li>
-                        <a class="page-scrool" href="{{ route('login') }}">Login</a>
+                        <!-- <a class="page-scrool" href="{{ route('login') }}">Login</a> -->
                     </li>
                     @else
                     <li>

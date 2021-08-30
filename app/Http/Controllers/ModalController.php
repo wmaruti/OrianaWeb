@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Input;
 use App\Http\Requests;
 use Session;
 
-class HomepageController extends Controller
+class ModalController extends Controller
 {
 
     public function indexservices(Request $request) {
@@ -51,7 +51,7 @@ class HomepageController extends Controller
         } else {
             $services = DB::table('services')->orderByDesc('id')->paginate(8);
         }
-        return view('homepage.index', [
+        return view('modal.index', [
             'about'     => $about,
             'listServices' => $listServices,
             'listFaqs' => $listFaqs,
@@ -67,8 +67,8 @@ class HomepageController extends Controller
 
     
 
-    public function contactStore(Request $request) {
-       
+    public function ModalStore(Request $request) {
+        // dd($request);
         $this->validate($request, [
             'name' => 'required',
             'phone' => 'required',
@@ -76,7 +76,8 @@ class HomepageController extends Controller
             'subject' => 'required',
             'message' => 'required'
         ]);
-       
+        // $services = Services::all();
+
         $feedback = new Feedback();
         $feedback->name = $request->name;
         $feedback->phone = $request->phone;
@@ -88,31 +89,9 @@ class HomepageController extends Controller
         return redirect(route('homepage.index'));
        
 
-       
+        // return view('homepage/index', ['services'=>$services] );
     }
 
 
-    public function contactStoremodal(Request $request) {
-        
-        $this->validate($request, [
-            'name' => 'required',
-            'phone' => 'required',
-            'email' => 'required|email',
-            'subject' => 'required',
-            'message' => 'required'
-        ]);
-       
-        $feedback = new Feedback();
-        $feedback->name = $request->name;
-        $feedback->phone = $request->phone;
-        $feedback->email = $request->email;
-        $feedback->subject = $request->subject;
-        $feedback->message = $request->message;
-        $feedback->saveOrFail();
-        session()->flash('message', 'Success');
-        return redirect(route('homepage.index'));
-       
-       
-
      }
-}
+

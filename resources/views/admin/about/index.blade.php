@@ -36,7 +36,7 @@
                                     <label>Image</label>
                                 </div>
                                 <div class="form-group">
-                                    <img src="{{ $about->image ? Storage::url('image/about/'.$about->image) : '' }}" class="img-responsive" width="25%">
+                                    <img src="{{ $about->image ? Storage::url('images/about/'.$about->image) : '' }}" class="img-responsive" width="25%">
                                 </div>
                                 <div class="form-group">
                                     <input type="file" class="form-control" name="image" value="{{ old('image') }}">

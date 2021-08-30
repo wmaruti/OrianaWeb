@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   <meta charset="utf-8">
+  
   @yield('title')
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -65,6 +66,7 @@
   <script src="{{ asset('asset/plugins/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
   <script src="{{ asset('asset/plugins/js/jquery.appear.js') }}"></script>
   <script src="{{ asset('asset/plugins/js/isotope.pkgd.min.js') }}"></script>
+  <script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
 
   <!-- Contact Form JavaScript File -->
   <script src="{{ asset('asset/js/contactform.js') }}"></script>

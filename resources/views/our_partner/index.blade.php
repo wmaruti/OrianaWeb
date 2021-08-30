@@ -11,7 +11,7 @@
                 
             </div>
             <div class="layer-1-8-product  text-center ">
-           <strong> <p> <h2 class="title1"  style="margin-top: -190px; margin-left: 0px; font-size:60px;">About</h2></p> 
+           <strong> <p> <h2 class="title1"  style="margin-top: -190px; margin-left: 0px; font-size:60px;">Our Partner</h2></p> 
           </strong>
             <!-- opera setting
              <strong> <p> <h2 class="title1"  style="margin-top: -300px; margin-left: -810px;">for Property</h2></p> 
@@ -23,7 +23,7 @@
     <!-- End Slider Area -->
 
                  </div>
-                    </div>
+                    <!-- </div> -->
     <!-- End Product area -->
   
    
@@ -37,46 +37,198 @@
                   
                     <div class="layer-1-8 " style=" text-align: center; margin-top:180px;">
                    
-                        <p><h2>Over 4 years experience<h2></p>
+                        <p><h2>Technology Partners<h2></p>
                     </div>
                     <div>
                    
-                     <!-- <br><br> <br><br> <br><br> <br><br> -->
-                     <style>
-                     .gaya{
-      
-height: 19rem;
-margin: 0 0 2.5rem;
-font-size: 1.5rem;
-font-weight: normal;
+                    
+
+</div>
+
+<br><br><br>
+
+<!-- start slider list -->
+<div class="s-wrap"  ><div class="s-move">
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 0.7fr 2fr;
+  grid-template-rows: 0.4fr 1.6fr 1fr
+  
+  gap: 0px 0px;
+  grid-template-areas:
+    "Business-Aspect Building-Management-Connection PPPSRS-connection "
+    ". . . "
+    ". . . ";
+}
+
+.Business-Aspect { grid-area: Business-Aspect; }
+
+.Building-Management-Connection { grid-area: Building-Management-Connection; }
+
+.PPPSRS-connection { grid-area: PPPSRS-connection; }
+
+
+
+.isi_slide{
+    border: none;
+    
+border-right: solid 1px #d8d8d8;   
+border-left: solid 1px #d8d8d8;   
+font-size: 1.625rem;
+font-weight: 600;
 font-stretch: normal;
 font-style: normal;
-line-height: 1.58;
-letter-spacing: 0.86px;
-margin-bottom: 5rem;
-text-align: center;
+margin-top:30px;
+letter-spacing: 0.93px;
+/* text-align: center; */
+color: #0f0f0f;
+}
 
-color: #4a4a4a;
-                     }
-                     </style>
-                    <h5 class="title1 gaya"  style="margin-bottom:190px;">
-                    Oriana Prima Persada was founded on 25 January 2017.<br>
-                    Part of subsidiary of PT Oriana Rafaindo Persada and <br>
-                    PT Akhdani Reka Solution. Started business in the <br>
-                    software solution field since 28 January 2009, <br>
-                    while starting businesses, PT Oriana Prima Persada <br>
-                    concerned with the Building Management System.  <br>
-                    We provide transparent, accurate solutions, and real<br> 
-                    time system. <br><br>
+</style>
+  <!-- <div class="slide">
+    <h2 class="layer-1-8"> Businees <br> Aspect</h2>
+    <p>
+      The episode orbits? The panic overwhelms a fuse. The major lurks below the shower!
+    </p>
+  </div>
+   -->
+  <div class="slide">
+  <div class="grid-container">
+  <div class=" Business-Aspect " style="margin-top:-25px; text-align:right ;"><img src="/storage/images/setting/group.png" width="140px" style="margin-right:30px;"></div>
+  <div class="Building-Management-Connection isi_slide" style="margin-top:-25px; text-align:center; padding-top:0px;"><img class="kiriputih" src="/storage/images/setting/group.png" width="140px"></div>
+  <div class="PPPSRS-connection " style="margin-top:-25px; text-align:left ; padding-top:0px;"> <img class="kiriputih" src="/storage/images/setting/group.png" width="140px"  style="margin-left:30px;"></div>
+  
+</div>
+  </div>
+ 
+</div></div>
+
+
+<!-- end slider list -->
+
+<br><br><br>
+<!-- start slider list -->
+<div class="s-wrap"  ><div class="s-move">
+<style>
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 22fr 22fr ;
+  grid-template-rows: 0.4fr 1.6fr 
+  
+  gap: 0px 0px;
+  grid-template-areas:
+    "Business-Aspect1 Building-Management-Connection1 "
+    ". .    "
+    ". . ";
+}
+
+.Business-Aspect1 { grid-area: Business-Aspect1; }
+
+.Building-Management-Connection1 { grid-area: Building-Management-Connection1; }
+
+
+
+
+.isi_slide1{
+    border: none;
+    
+/* border-right: solid 1px #d8d8d8;    */
+border-left: solid 1px #d8d8d8;   
+font-size: 1.625rem;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+margin-top:30px;
+letter-spacing: 0.93px;
+/* text-align: center; */
+color: #0f0f0f;
+}
+
+</style>
+  <!-- <div class="slide">
+    <h2 class="layer-1-8"> Businees <br> Aspect</h2>
+    <p>
+      The episode orbits? The panic overwhelms a fuse. The major lurks below the shower!
+    </p>
+  </div>
+   -->
+  <div class="slide">
+  <div class="grid-container1">
+  <div class=" Business-Aspect1 " style="margin-top:-25px; text-align:right ;"><img src="/storage/images/setting/group.png" width="140px" style="margin-right:30px;"></div>
+  <div class="Building-Management-Connection1 isi_slide1" style="margin-top:-25px; text-align:left; padding-top:0px;"><img class="kiriputih" src="/storage/images/setting/group.png" width="140px" style="margin-left:30px;"></div>
+  
+</div>
+  </div>
+ 
+</div></div>
+
+
+<!-- end slider list -->
+
+<div class="layer-1-8 " style=" text-align: center; margin-top:100px;">
                    
-                    Within 4 years have made several application products <br>that help business in various fields
-                    </h5>
+                   <p><h2>Portfolio<h2></p>
+               </div>
 
 </div>
+<br>
 
+<!-- start slider list -->
+<div class="s-wrap" style="margin-bottom:7.5rem;"><div class="s-move">
+<style>
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:0.1fr 0.4fr 0.4fr 0.4fr;  
+  
+  gap: 0px 0px;
+  grid-template-areas:
+    "Business-Aspect Building-Management-Connection PPPSRS-connection Tenant-connection "
+    ". . . ."
+    ". . . .";
+}
+
+.Business-Aspect { grid-area: Business-Aspect; }
+
+.Building-Management-Connection { grid-area: Building-Management-Connection; }
+
+.PPPSRS-connection { grid-area: PPPSRS-connection; }
+
+.Tenant-connection { grid-area: Tenant-connection; }
+
+.isi_slide{
+    border: none;
+border-right: solid 1px #d8d8d8;   
+font-size: 1.625rem;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+margin-top:30px;
+letter-spacing: 0.93px;
+/* text-align: center; */
+color: #0f0f0f;
+}
+
+</style>
+<div class="slide">
+  <div class="grid-container2">
+  <div class=" Business-Aspect isi_slide "  style="margin-top:25px; text-align:center; padding-top:10px;"><img src="/storage/images/setting/group.png" width="140px"></div>
+  <div class="Building-Management-Connection isi_slide" style="margin-top:25px; text-align:center; padding-top:10px;"><img src="/storage/images/setting/group.png" width="140px"></div>
+  <div class="PPPSRS-connection isi_slide" style="margin-top:25px; text-align:center; padding-top:10px;"> <img src="/storage/images/setting/group.png" width="140px"></div>
+  <div class="Tenant-connection " style="margin-top:25px; text-align:center; padding-top:10px;"><img src="/storage/images/setting/group.png" width="140px"></div>
+
+  
 </div>
- <!-- Modal -->
- <div id="ajaxModel" class="modal fade in" role="dialog">
+  </div>
+  
+</div></div>
+
+<!-- end slider list -->
+
+
+       <!-- Modal -->
+       <div id="ajaxModel" class="modal fade in" role="dialog">
  
  <style>
  .Mask {
@@ -167,7 +319,7 @@ color: #4a4a4a;
                                 </div>
 
 
-                        <select class="select" id="services_id" name="subject"  id="subject" placeholder="Product*" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"  style=" width: 39.813rem; border: none; border-bottom: 1px solid #bababa; color:grey; padding-bottom:10px; " > 
+                        <select class="select" id="services_id" name="subject"  id="subject" placeholder="Product*" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"  style=" width: 39.813rem; margin-left:-140px; border: none; border-bottom: 1px solid #bababa; color:grey; padding-bottom:10px; " > 
                             <option value="" > &nbsp;&nbsp;&nbsp;&nbsp; Products* 
                             </option>
                             @foreach($listServices as $services) {
@@ -215,7 +367,7 @@ background-color: #253470;" >Save</button></div>
     <!-- End Contact Area -->
 
 <style>
-.Rectangle {
+.Rectangle1 {
 
 width: 90rem;
 
@@ -237,7 +389,7 @@ background-color: #f7f7f7;
 </style>
 
 
-<div class="Rectangle " style="margin-top:20px;"> </div>
+<div class="Rectangle1 " style="margin-top:20px;"> </div>
        </div>
 
 
@@ -326,7 +478,6 @@ $('#productForm').on('submit', function(e) {
   
 
 </script>
-
-
+           
 
 @endsection

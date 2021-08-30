@@ -25,13 +25,18 @@
               <li class="nav-item dropdown">
                 <a href="{{ route('admin.service.index') }}" class="nav-link"><i class="fas fa-pencil-ruler"></i> <span>Products</span></a>
               </li>
-              <!-- <li><a href="{{ route('admin.portofolio.index') }}" class="nav-link"><i class="fas fa-th-large"></i> <span>Portofolio</span></a></li>
-              <li><a href="{{ route('admin.profile.index') }}" class="nav-link"><i class="far fa-user"></i> <span>Profile</span></a></li>
-              <li><a href="{{ route('admin.testimoni.index') }}" class="nav-link"><i class="fas fa-ellipsis-h"></i> <span>Testimoni</span></a></li> -->
+              <li><a href="{{ route('admin.jobs.index') }}" class="nav-link"><i class="fas fa-briefcase"></i> <span>Career</span></a></li>
+              <li><a href="{{ route('admin.multipleuploads.index') }}" class="nav-link"><i class="fas fa-briefcase"></i> <span>Applicant Data</span></a></li>
+
               <li><a href="{{ route('admin.address.index') }}" class="nav-link"><i class="fas fa-map-marker-alt"></i> <span>Address</span></a></li>
-              <!-- <li><a href="{{ route('admin.contact.index') }}" class="nav-link"><i class="fas fa-address-book"></i> <span>Contact Us</span></a></li>
-              <li><a href="{{ route('admin.faqs.index') }}" class="nav-link"><i class="fas fa-exclamation"></i> <span>FAQS</span></a></li> -->
               <li><a href="{{ route('admin.feedbacks.index') }}" class="nav-link"><i class="fas fa-plus-circle"></i> <span>Feedbacks</span></a></li>
               <li><a href="{{ route('admin.setting.index') }}" class="nav-link"><i class="fas fa-address-card"></i> <span>Setting Website</span></a></li>
-        </aside>
+        
+              <!-- <li><a href="{{ route('admin.portofolio.index') }}" class="nav-link"><i class="fas fa-th-large"></i> <span>Portofolio</span></a></li>
+              <li><a href="{{ route('admin.profile.index') }}" class="nav-link"><i class="far fa-user"></i> <span>Profile</span></a></li>
+              <li><a href="{{ route('admin.testimoni.index') }}" class="nav-link"><i class="fas fa-ellipsis-h"></i> <span>Testimoni</span></a></li>
+              <li><a href="{{ route('admin.contact.index') }}" class="nav-link"><i class="fas fa-address-book"></i> <span>Contact Us</span></a></li>
+              <li><a href="{{ route('admin.faqs.index') }}" class="nav-link"><i class="fas fa-exclamation"></i> <span>FAQS</span></a></li> -->
+
+            </aside>
       </div>

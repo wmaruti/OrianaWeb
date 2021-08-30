@@ -112,7 +112,8 @@ oriana.pp@oriana.id
                     <ul>
                     <a href="{{ url('about_uspage') }}" > About </a><br>
                     <a href="{{ url('featurespage') }}" > Features </a><br>
-                    <a href='contact' > Careers </a>
+                    <a href="{{ url('career') }}"  > Careers </a>
+                    
                 </div>
               </div>
             </div>
@@ -125,7 +126,7 @@ oriana.pp@oriana.id
                 <div class="footer-isi section-headline1">
                     <ul>
                     <a href='#' > FAQ </a><br>
-                    <a href='#myModal' data-toggle="modal" data-target="#myModal"> Support </a><br>
+                    <a href='#ajaxModel' data-toggle="modal" data-target="#ajaxModel" href="javascript:void(0)" id="createNewFeedback"> Support </a><br>
                    	<!-- Tombol untuk menampilkan modal-->
 	<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buka Modal</button> -->
  
@@ -171,7 +172,8 @@ oriana.pp@oriana.id
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="copyright text-center">
               <p>
-                &copy;  <strong>2021  PT ORIANA PRIMA PERSADA. ALL RIGHT RESERVED</strong> 
+                &copy;  <strong><?php echo date("Y"); ?>
+  PT ORIANA PRIMA PERSADA. ALL RIGHT RESERVED</strong> 
               </p>
             </div>
             <div class="credits">
